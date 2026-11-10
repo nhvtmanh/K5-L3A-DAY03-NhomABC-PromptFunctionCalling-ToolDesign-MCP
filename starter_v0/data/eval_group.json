@@ -1,7 +1,7 @@
 {
   "dataset_id": "day04_v2_research_group",
   "dataset_role": "group",
-  "description": "10 eval cases do nhóm viết: 5 single-turn và 5 multi-turn, tập trung vào routing, tham số, thiếu thông tin, đổi ý và ranh giới an toàn.",
+  "description": "11 eval cases do nhóm viết: 6 single-turn và 5 multi-turn, tập trung vào routing, tham số, thiếu thông tin, đổi ý, ranh giới an toàn và tool deduplicate mới.",
   "allowed_failure_types": ["wrong_tool", "wrong_arg_value", "wrong_boundary", "unnecessary_tool", "out_of_scope", "missing_info"],
   "cases": [
     {
@@ -78,6 +78,30 @@
       "metadata": {
         "difficulty": "easy",
         "what_it_tests": "Yêu cầu sáng tác không thuộc research phải không gọi research tool."
+      }
+    },
+    {
+      "id": "G11_deduplicate_research_links",
+      "phase": "B",
+      "suite": "group",
+      "query": "Loại bỏ liên kết trùng lặp trong danh sách này, giữ item đầu tiên: [{\"title\":\"OpenAI Research\",\"url\":\"https://openai.com/research/\"},{\"title\":\"OpenAI Research copy\",\"url\":\"https://openai.com/research\"}]",
+      "failure_type": "wrong_tool",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "deduplicate",
+            "args": {
+              "items": [
+                {"title": "OpenAI Research", "url": "https://openai.com/research/"},
+                {"title": "OpenAI Research copy", "url": "https://openai.com/research"}
+              ]
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "difficulty": "medium",
+        "what_it_tests": "Yêu cầu xử lý kết quả đã có để bỏ URL trùng phải route tới tool deduplicate."
       }
     },
     {

@@ -1,0 +1,55 @@
+{
+  "transcript_id": "ui-demo_deepseek_20261110T124216484138_2ac8559b",
+  "version": "ui-demo",
+  "artifact_version": "ui-demo+pc3847e865333+t7f028bc63949",
+  "prompt_hash": "c3847e865333042bce15b9e44295bb4dc560ac6ccf62b7b701fa6512703faa3b",
+  "tools_hash": "7f028bc639494f75028ff9c798d05083121fc7f7dcfabd57a6dda90412916b18",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "system_prompt": "C:\\Users\\lehoa\\Desktop\\K5-L3A-DAY03-NhomABC-ResearchAgentToolEval\\starter_v0\\artifacts\\system_prompt.md",
+  "tools": "C:\\Users\\lehoa\\Desktop\\K5-L3A-DAY03-NhomABC-ResearchAgentToolEval\\starter_v0\\artifacts\\tools.yaml",
+  "created_at": "2026-11-10T12:42:16",
+  "updated_at": "2026-11-10T12:42:47",
+  "turns": [
+    {
+      "turn_index": 1,
+      "started_at": "2026-11-10T12:42:25",
+      "provider": "deepseek",
+      "model": "deepseek-chat",
+      "version": "ui-demo",
+      "user": "jason huang là ai",
+      "status": "answered",
+      "assistant_text": "Jason Huang là một cái tên khá phổ biến, nên mình cần bạn làm rõ hơn để tra đúng người nhé.\n\nBạn đang hỏi về Jason Huang trong lĩnh vực nào? Ví dụ:\n- Nhân vật công nghệ/khởi nghiệp (CEO, founder)\n- Diễn viên, ca sĩ, người nổi tiếng\n- Nhà khoa học/nghiên cứu\n- Một tài khoản cụ thể trên X/Twitter (nếu có, cho mình handle hoặc URL)\n\nCho mình thêm bối cảnh (công ty, quốc gia, lĩnh vực) thì mình sẽ tra chính xác hơn.",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": "Jason Huang là một cái tên khá phổ biến, nên mình cần bạn làm rõ hơn để tra đúng người nhé.\n\nBạn đang hỏi về Jason Huang trong lĩnh vực nào? Ví dụ:\n- Nhân vật công nghệ/khởi nghiệp (CEO, founder)\n- Diễn viên, ca sĩ, người nổi tiếng\n- Nhà khoa học/nghiên cứu\n- Một tài khoản cụ thể trên X/Twitter (nếu có, cho mình handle hoặc URL)\n\nCho mình thêm bối cảnh (công ty, quốc gia, lĩnh vực) thì mình sẽ tra chính xác hơn.",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [],
+      "ended_at": "2026-11-10T12:42:29"
+    },
+    {
+      "turn_index": 2,
+      "started_at": "2026-11-10T12:42:44",
+      "provider": "deepseek",
+      "model": "deepseek-chat",
+      "version": "ui-demo",
+      "user": "bồ của jason huang nvidia là ai",
+      "status": "answered",
+      "assistant_text": "Mình chưa có đủ thông tin để xác định \"Jason Huang của Nvidia\" là ai — có thể bạn đang nói tới Jensen Huang (CEO Nvidia), tên tiếng Trung là Hoàng Nhân Huân (黃仁勳), thường được gọi thân mật là \"Jason Huang\" trong một số ngữ cảnh?\n\nBạn muốn mình tra thông tin về:\n1. Jensen Huang (CEO Nvidia) và vợ ông ấy (Lori Huang)?\n2. Một người khác tên Jason Huang có liên hệ với Nvidia?\n\nNgoài ra, lưu ý: thông tin về đời tư/người yêu của cá nhân thường nhạy cảm và không phải lúc nào cũng có nguồn đáng tin. Bạn xác nhận giúp mình hướng tra nhé.",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": "Mình chưa có đủ thông tin để xác định \"Jason Huang của Nvidia\" là ai — có thể bạn đang nói tới Jensen Huang (CEO Nvidia), tên tiếng Trung là Hoàng Nhân Huân (黃仁勳), thường được gọi thân mật là \"Jason Huang\" trong một số ngữ cảnh?\n\nBạn muốn mình tra thông tin về:\n1. Jensen Huang (CEO Nvidia) và vợ ông ấy (Lori Huang)?\n2. Một người khác tên Jason Huang có liên hệ với Nvidia?\n\nNgoài ra, lưu ý: thông tin về đời tư/người yêu của cá nhân thường nhạy cảm và không phải lúc nào cũng có nguồn đáng tin. Bạn xác nhận giúp mình hướng tra nhé.",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [],
+      "ended_at": "2026-11-10T12:42:47"
+    }
+  ]
+}

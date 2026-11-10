@@ -84,6 +84,25 @@ tools:
         headline: {type: string, default: "", description: "Tiêu đề"}
       required: [items, template]
 
+  - name: deduplicate
+    description: "Loại bỏ item có URL trùng lặp khỏi danh sách đã thu thập, giữ lần xuất hiện đầu tiên và thứ tự ban đầu. Chỉ dùng để khử trùng lặp dữ liệu đã có; không tìm hoặc tải dữ liệu."
+    parameters:
+      type: object
+      properties:
+        items:
+          type: array
+          default: []
+          description: "Danh sách item đã thu thập; item trùng URL chỉ giữ item đầu tiên."
+          items:
+            type: object
+            properties:
+              title: {type: string}
+              url: {type: string}
+              source: {type: string}
+              summary: {type: string}
+              section: {type: string}
+      required: [items]
+
   # ---------------- Bonus tools ----------------
   - name: send
     description: "Gửi một đoạn văn bản đi."
