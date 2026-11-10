@@ -18,9 +18,20 @@ OPENROUTER_API_KEY=...
 Alternatives:
 
 ```bash
+DEEPSEEK_API_KEY=...
 OPENAI_API_KEY=...
 ANTHROPIC_API_KEY=...
 GEMINI_API_KEY=...
+```
+
+DeepSeek uses its OpenAI-compatible API. Add `DEEPSEEK_API_KEY` to
+`starter_v0/.env`; the default model is `deepseek-chat`. Optionally override
+`DEEPSEEK_BASE_URL` or `DEEPSEEK_MODEL`.
+
+Preflight:
+
+```bash
+python scripts/preflight_provider.py --provider deepseek
 ```
 
 Preflight:
@@ -221,3 +232,17 @@ Before class, at least one person per group should have:
 - optional `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`
 - optional `ARXIV_USER_AGENT`
 - `python scripts/preflight_provider.py --provider openrouter` passes
+
+## Streamlit UI
+
+Run from `starter_v0/` after installing `requirements.txt` and configuring a
+provider key in `.env`:
+
+```powershell
+streamlit run app.py
+```
+
+Open `http://localhost:8501`. The UI saves chat transcripts under
+`starter_v0/transcripts/`. Telegram sends are held until the user presses the
+separate **Xác nhận gửi** button; do not expose the demo publicly without adding
+appropriate access control and reviewing API quota and data handling.

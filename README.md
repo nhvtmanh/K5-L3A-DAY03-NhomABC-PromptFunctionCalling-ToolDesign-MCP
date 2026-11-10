@@ -83,6 +83,7 @@ Bonus:
 starter_v0/
   agent.py                    # one-shot model -> tool calls -> tool execution
   chat.py                     # interactive chat, multi-round tools, transcript JSON
+  app.py                      # Streamlit UI for the interactive research agent
   run_eval.py                 # eval routing + args, writes runs/*.json
   versioning.py               # prompt/tool hash
   pytest.ini
@@ -106,7 +107,7 @@ starter_v0/
       TOOL.md                 # frontmatter + notes
       tool.py                 # self-contained implementation
   company_policy/             # local markdown KB for bonus policy tool
-  providers/                  # OpenRouter/OpenAI/Anthropic/Gemini/Ollama (local) adapters
+  providers/                  # OpenRouter/OpenAI/DeepSeek/Anthropic/Gemini/Ollama (local) adapters
   scripts/preflight_provider.py
   samples/                    # mock format examples (transcript, run-analysis, version_log)
 ```
