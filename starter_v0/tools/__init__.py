@@ -8,6 +8,7 @@ import yaml
 # Folder names are intentionally vague to match the tool names students see.
 # The imported function names are the underlying implementations (unchanged).
 from .clarify.tool import ask_user
+from .deduplicate.tool import deduplicate_items
 from .papers.tool import arxiv_search
 from .paper_text.tool import get_arxiv_paper_text
 from .timeline.tool import get_user_tweets
@@ -31,6 +32,7 @@ TOOL_FUNCTIONS = {
     "lookup": web_search,
     "fetch": read_url,
     "format": render_digest,
+    "deduplicate": deduplicate_items,
     "send": send_telegram,
     "policy": search_company_policy,
     "papers": arxiv_search,
@@ -53,4 +55,3 @@ def to_openai_tools(declarations: list[dict[str, Any]]) -> list[dict[str, Any]]:
             "parameters": item.get("parameters", {"type": "object", "properties": {}}),
         },
     } for item in declarations]
-
