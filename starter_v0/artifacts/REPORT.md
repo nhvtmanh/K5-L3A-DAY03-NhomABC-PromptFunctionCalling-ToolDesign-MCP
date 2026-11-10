@@ -6,9 +6,9 @@
 
 ## Team
 
-- Team:
-- Members:
-- Provider/model:
+- Team: ABC
+- Members: Nguyễn Hoàng Văn Tiến Mạnh, Phan Văn Cường, Lê Hoàng Anh, Nguyễn Thị Thu Hà
+- Provider/model: OpenRouter, DeepSeek
 
 ---
 
